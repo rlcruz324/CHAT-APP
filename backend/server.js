@@ -1,4 +1,5 @@
 ////Package Imports
+import path from "path";
 import express from "express"; //express server package
 import dotenv from "dotenv"; //allows us to manage .env variables like PORT
 import cookieParser from "cookie-parser";
@@ -12,14 +13,18 @@ import userRoutes from "./routes/user.routes.js";
 
 //////Database import
 import connectToMongoDB from "./db/connectToMongoDB.js"; //allows us to us connectToMongoDB.js 
-
-////Variables
-//Create express server
-const app = express();
-const PORT = process.env.PORT || 5000;
+import { app, server } from "./socket/socket.js"; //adds socket onto of our server so that messages are real time
 
 dotenv.config();//A function allowing us to get the PORT(.env) value in app.listen
 //Port will equal port value in .env or 5000
+
+const __dirname = path.resolve();
+////Variables
+//Create express server
+//const app = express();
+const PORT = process.env.PORT || 5000;
+
+
 
 
 ////Middleware
@@ -31,19 +36,15 @@ app.use("/api/messages", messageRoutes);
 app.use("/api/users", userRoutes);
 
 
+app.get("*", (req, res) => {
+	res.sendFile(path.join(__dirname, "frontend", "dist", "index.html"));
+});
 
 
 //Checks if server is running
-app.listen(PORT, () => {
+server.listen(PORT, () => {
     connectToMongoDB(); //Allows us to see if we connected to server in terminal.
     console.log(`Server Running on port ${PORT}`);//Allows us to see if server is running in terminal
 });
 //in package.json in scripts add "server": "node backend/server.js" > this connects to app.listen
 
-
-
-
-// app.get("/", (req, res) => {//gets the rest of the url after /
-//     // root route http://localhost:5000/
-//     res.send("Hello World!!");
-// });

@@ -1,6 +1,6 @@
 import { useState } from "react";
-//import { Link } from "react-router-dom";
-//import useLogin from "../../hooks/useLogin";
+import { Link } from "react-router-dom";
+import useLogin from "../../hooks/useLogin";
 
 const Login = () => {
 	const [username, setUsername] = useState("");
@@ -67,8 +67,8 @@ export default Login;
 
 
 
-// //STARTER CODE FOR THIS FILE
-// //Tailwindcss Glassmorhpism Generator 
+//STARTER CODE FOR THIS FILE
+//Tailwindcss Glassmorhpism Generator 
 // const Login = () => {
 // 	return (/**Change ChatApp to name of App */
 // 		<div className='flex flex-col items-center justify-center min-w-96 mx-auto'>
@@ -96,9 +96,14 @@ export default Login;
 // 							className='w-full input input-bordered h-10'
 // 						/>
 // 					</div>
-// 					<a href='#' className='text-sm  hover:underline hover:text-blue-600 mt-2 inline-block'>
+
+//                     <Link to='/signup' className='text-sm  hover:underline hover:text-blue-600 mt-2 inline-block'> 
+//                     {"Don't"} have an account?
+// 				    </Link>
+
+// 					{/* <a href='#' className='text-sm  hover:underline hover:text-blue-600 mt-2 inline-block'>
 // 						{"Don't"} have an account?
-// 					</a>
+// 					</a> */}
 
 // 					<div>
 // 						<button className='btn btn-block btn-sm mt-2'>Login</button>
