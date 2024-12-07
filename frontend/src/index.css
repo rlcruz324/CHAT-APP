@@ -3,11 +3,14 @@
 @tailwind utilities;
 
 body {/*this is to style the background*/
-	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/bg.png");/*to change background find new bg.png and replace it*/
+	/* background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/bg.png");to change background find new bg.png and replace it */
+	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/FullertonBackground.jpg");/*to change background find new bg.png and replace it*/
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 }
+
+
 
 /* dark mode looking scrollbar */
 ::-webkit-scrollbar {
