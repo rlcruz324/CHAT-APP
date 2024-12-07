@@ -5,7 +5,7 @@
 
 ---
 
-## Product Vision
+## Product Vision :bulb:
 
 For college students who need a simple chat application, the ChatterBox is a chat tool that is integrated with college campuses' LMS, such as Canvas,
 and allows quick conversations for all students. Unlike other products, our product makes it easy to connect
@@ -13,7 +13,7 @@ and chat with other students at their school in private messages.
 
 ---
 
-## How to Run Chatterbox
+## How to Run Chatterbox :checkered_flag:
 
 ### Backend
 
@@ -42,7 +42,7 @@ and chat with other students at their school in private messages.
    ```
    http://localhost:3000
 
-## Terminal Commands
+## Terminal Commands :computer:
 ```
 cd frontend
 npm create vite@latest
@@ -57,7 +57,7 @@ npm init -y
 ```
 (make server.js in backend)
 
-## Terminal Commands to install packages
+## Terminal Commands to install packages :shipit:
 ```
 npm install express dotenv cookie-parser bcryptjs mongoose socket.io jsonwebtoken
 ```
@@ -69,7 +69,7 @@ npm install express dotenv cookie-parser bcryptjs mongoose socket.io jsonwebtoke
 - __socket.io__: to have real time communication
 - __jsonwebtoken__: to create tokens
 
-## More Terminal Commands: 
+## More Terminal Commands: :pencil2:
 (allows the browser to update in the background)  
 ```
 npm install nodemon --save-dev
