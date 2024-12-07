@@ -8,20 +8,20 @@ This is the backend for the chat application.
 
 ### Core Functionalities
 1. **Authentication**:closed_lock_with_key:
-   - Secure signup and login using bcrypt for hashing passwords.
-   - JWT-based token authentication.
-   - Logout to clear session cookies.
+   - Secure signup and login.
+   - Token authentication.
+   - Logout.
 
 2. **Real-Time Messaging**:repeat_one:
    - Messages are sent and received in real time using Socket.IO.
-   - Conversations and messages are stored in MongoDB for persistence.
+   - Conversations and messages are stored in MongoDB.
 
 3. **User Management**:file_folder:
-   - Fetches users for chat sidebar excluding the current user.
+   - Fetches users for chat sidebar.
 
 4. **Socket.IO Integration**:bell:
    - Tracks user connections and manages online user lists.
-   - Broadcasts updates to clients about new messages and online users.
+   - Shares updates to about new messages and online users.
 
 ---
 
@@ -29,45 +29,45 @@ This is the backend for the chat application.
 
 ### **Controllers**
 - **`auth.controller.js`**:
-  Handles signup, login, and logout operations.
+  Signup, login, and logout operations.
 - **`message.controller.js`**:
-  Manages sending and retrieving messages.
+  Sends and receives messages.
 - **`user.controller.js`**:
-  Handles fetching users for the sidebar.
+  Fetches users for the sidebar.
 
 ### **Models**
 - **`user.model.js`**:
-  Defines the schema for user data.
+  User data schema.
 - **`message.model.js`**:
-  Manages individual messages.
+  Message management.
 - **`conversation.model.js`**:
-  Tracks conversations between users.
+  Coversation tracking.
 
 ### **Routes**
 - **`auth.routes.js`**:
-  Routes for authentication operations.
+  Authentication routing.
 - **`message.routes.js`**:
-  Routes for message operations with real-time support.
+  Message routing.
 - **`user.routes.js`**:
-  Routes for managing user data.
+  User data routing.
 
 ### **Utilities**
 - **`connectToMongoDB.js`**:
-  Establishes a connection to MongoDB.
+  Connects to MongoDB.
 - **`generateToken.js`**:
-  Generates JWT tokens and sets them in cookies.
+  Creates tokens and sets them in cookies.
 
 ### **Middleware**
 - **`protectRoute.js`**:
-  Verifies JWT tokens to secure protected routes.
+  Verifies tokens.
 
 ### **Socket**
 - **`socket.js`**:
-  Configures Socket.IO for real-time messaging and user connection tracking.
+  Sets up Socket.IO for real-time messaging.
 
 ### **Server**
 - **`server.js`**:
-  Entry point for the backend server, integrating API routes, WebSocket, and database connection.
+  Accesses backend server, API routes, WebSocket, and the database connection.
 
 ---
 
@@ -78,8 +78,3 @@ This is the backend for the chat application.
 2. Set up a **MongoDB** database (local or cloud).
 3. Install **npm**.
 
-### Installation
-1. Clone the repository:
-   ```bash
-   git clone <repository-url>
-   cd <backend-folder>
