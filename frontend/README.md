@@ -1,3 +1,46 @@
+# Frontend
+
+Frontend uses react for real-time messaging.
+
+---
+
+## Features
+
+:closed_lock_with_key:**User Authentication**: Secure login and signup forms.  
+:repeat:**Real-Time Messaging**: Dynamic and instant communication with others.  
+:bow:**Personalized Design**: Personalizes design according to user.
+
+---
+
+## Prerequisites
+
+- **Node.js**: Node.js must be installed
+- **Backend Server**: Backend server must be running
+
+---
+
+## Installation
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/rlcruz324/CHAT-APP.git
+   cd CHAT-APP/frontend
+
+## Dependencies
+
+```
+npm install
+
+```
+
+## Start
+
+```
+npm installnpm start
+
+```
+
+
 
 # Frontend
 The main folders of the front end are:
