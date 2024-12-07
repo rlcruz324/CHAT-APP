@@ -74,7 +74,7 @@ This is the backend for the chat application.
 ## Setup Instructions
 
 ### Prerequisites
-1. Install **Node.js** (>= 14.x).
-2. Set up a **MongoDB** database (local or cloud).
+1. Install **Node.js**.
+2. Set up a **MongoDB** database.
 3. Install **npm**.
 
