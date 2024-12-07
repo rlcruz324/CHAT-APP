@@ -25,7 +25,7 @@ This is the backend for the chat application.
 
 ---
 
-## File Structure
+## Folders
 
 ### **Controllers**
 - **`auth.controller.js`**:
@@ -67,7 +67,11 @@ This is the backend for the chat application.
 
 ### **Server**
 - **`server.js`**:
-  Accesses backend server, API routes, WebSocket, and the database connection.
+  Main server. Connects to database using **`connectToMongoDB.js`** from db folder. It uses WebSocket through **`socket.js`** to ensure messages are in realtime. It has three routes:  
+  - **`auth.routes.js`**: sends users to different routes. **`auth.controller.js`** has all the functions for 
+  - **`message.routes.js`** uses *`message.controller.js`** to save messages to the database
+and **`message.model.js`** to structure messages with sender id, reciever id, the message, and timestamps  
+  - **`user.routes.js`** uses middleware **`protectRoute.js`** and verfies users by making sure only authorized users get. **`user.controller.js`** gets the userlist for the sidebar.
 
 ---
 
