@@ -1,10 +1,11 @@
 {
   "name": "chat-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "> An easy-to-use chat application for college students that connects them seamlessly with students from their school.",
   "main": "index.js",
   "scripts": {
-    "server": "nodemon backend/server.js"
+    "server": "nodemon backend/server.js",
+    "test":"jest"
   },
   "type": "module",
   "keywords": [],
@@ -20,6 +21,15 @@
     "socket.io": "^4.8.1"
   },
   "devDependencies": {
+    "jest": "^29.7.0",
     "nodemon": "^3.1.7"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rlcruz324/CHAT-APP.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rlcruz324/CHAT-APP/issues"
+  },
+  "homepage": "https://github.com/rlcruz324/CHAT-APP#readme"
 }
